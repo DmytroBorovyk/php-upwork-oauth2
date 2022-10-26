@@ -97,6 +97,7 @@ final class OAuth2ClientLib extends AbstractOAuth implements ApiClient
 	    return $response;
 	} catch (\Exception $e) {
 	    $response = $e;
+	    return $response;
 	}
         
 	ApiDebug::p('got response from server', $response);
